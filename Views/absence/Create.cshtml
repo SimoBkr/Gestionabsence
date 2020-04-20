@@ -1,0 +1,23 @@
+@model coreProject.Models.Absence 
+ 
+<form asp-action="Create">
+    <div>
+         <label>code Absence</label>
+         <input type="text" asp-for="codeAbsence">
+    </div>
+     <div>
+         <label>code Matiere</label>
+         <input type="text" asp-for="codeMatiere">
+    </div>
+     <div>
+         <label>code Carte</label>
+         <input type="text" asp-for="codeCart">
+    </div>
+     <div>
+         <label>date Absence</label>
+         <input type="text" asp-for="dateAbsence">
+    </div>
+    <button type="submit">Create</button>
+    <button asp-action="Index" type="submit">Back</button>
+
+</form>  

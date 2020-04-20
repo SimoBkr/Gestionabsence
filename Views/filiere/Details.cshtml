@@ -1,0 +1,15 @@
+@model coreProject.Models.Filiere
+<form>
+    <div>
+         <label>code Filiere</label>
+         <label>@Html.DisplayFor(model => model.codeFiliere)</label>
+    </div>
+     <div>
+         <label>nom Filier</label>
+         <label>@Html.DisplayFor(model => model.nomFilier)</label>
+    </div>
+    <div>
+        <button asp-action="Index">Back</button>
+    </div>
+
+</form>

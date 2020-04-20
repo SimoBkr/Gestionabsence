@@ -1,0 +1,21 @@
+@model coreProject.Models.Matiere
+<form asp-action="Edit">
+    <div>
+         <label>code Matiere</label>
+         <input asp-for="codeMatiere" type="text">
+    </div>
+     <div>
+         <label>nomMatiere</label>
+         <input asp-for="nomMatiere" type="text">
+    </div>
+     <div>
+         <label>code Prof</label>
+         <input asp-for="codeProf" type="text">
+    </div>
+ 
+    <div>
+         <button type="submit">Edit</button>
+         <button asp-action="Index">Back</button>
+    </div>
+
+</form>

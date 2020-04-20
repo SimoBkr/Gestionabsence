@@ -1,0 +1,31 @@
+@model coreProject.Models.Professeur
+<form>
+    <div>
+         <label>code Professeur</label>
+         <label>@Html.DisplayFor(model => model.codeProf)</label>
+    </div>
+     <div>
+         <label>nom Professeur</label>
+         <label>@Html.DisplayFor(model => model.nomProfesseur)</label>
+    </div>
+     <div>
+         <label>prenom Professeur</label>
+        <label>@Html.DisplayFor(model => model.prenomProfesseur)</label>
+    </div>
+     <div>
+         <label>adresse Professeur</label>
+         <label>@Html.DisplayFor(model => model.adresseProfesseur)</label>
+    </div>
+     <div>
+         <label>phoneProfesseur</label>
+         <label>@Html.DisplayFor(model => model.phoneProfesseur)</label>
+    </div>
+     <div>
+         <label>Id</label>
+         <label>@Html.DisplayFor(model => model.Id)</label>
+    </div>
+    <div>
+        <button asp-action="Index">Back</button>
+    </div>
+
+</form>

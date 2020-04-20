@@ -1,0 +1,22 @@
+@model coreProject.Models.Absence 
+ 
+<form asp-action="Edit">
+    <div>
+         <label>code Absence</label>
+         <labe>@Html.DisplayFor(model=> model.codeAbsence)</labe>
+    </div>
+     <div>
+         <label>code Matiere</label>
+         <labe>@Html.DisplayFor(model=> model.codeMatiere)</labe>
+    </div>
+     <div>
+         <label>code Carte</label>
+         <labe>@Html.DisplayFor(model=> model.codeCart)</labe>
+    </div>
+     <div>
+         <label>date Absence</label>
+        <labe>@Html.DisplayFor(model=> model.dateAbsence)</labe>
+    </div>
+    <button asp-action="Index">Back</button>
+
+</form>  

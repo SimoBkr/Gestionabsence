@@ -1,0 +1,44 @@
+@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityRole>
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <link href="~/dist/css/index.css" type="stylesheet">
+          <title>Document</title>
+     </head>
+     <body>
+          <br><br>
+           <h1>List of Roles</h1>
+<a asp-action="Create" class="btn btn-primary">Create</a>
+<div class="panel panel-default">
+     <br>
+   <div class="panel-heading">
+      Roles
+   </div>
+   <br>
+   <div class="panel-body">
+<table class="table table-bordred" >
+      <thead>
+     <tr>
+          <td style="background: red;">Id</td>
+          <td>Name</td>
+     </tr>
+      </thead>
+         <tbody>
+     @foreach (var item in Model)
+     {
+     <tr>
+          <td>@item.Id</td>
+          <td>@item.Name</td>
+     </tr>
+     }
+      </tbody>
+</table>
+ </div>
+   
+</div>
+
+
+     </body>
+     </html>

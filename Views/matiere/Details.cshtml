@@ -1,0 +1,20 @@
+@model coreProject.Models.Matiere
+<form>
+    <div>
+         <label>code Matiere</label>
+         <label>@Html.DisplayFor(model => model.codeMatiere)</label>
+    </div>
+     <div>
+         <label>nom Matiere</label>
+         <label>@Html.DisplayFor(model => model.nomMatiere)</label>
+    </div>
+     <div>
+         <label>code Professeur</label>
+        <label>@Html.DisplayFor(model => model.codeProf)</label>
+    </div>
+ 
+    <div>
+        <button asp-action="Index">Back</button>
+    </div>
+
+</form>

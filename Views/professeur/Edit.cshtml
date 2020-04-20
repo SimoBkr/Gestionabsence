@@ -1,0 +1,32 @@
+@model coreProject.Models.Professeur
+<form asp-action="Edit">
+    <div>
+         <label>code Professeur</label>
+         <input asp-for="codeProf" type="text">
+    </div>
+     <div>
+         <label>nom Professeur</label>
+         <input asp-for="nomProfesseur" type="text">
+    </div>
+     <div>
+         <label>prenom Professeur</label>
+         <input asp-for="prenomProfesseur" type="text">
+    </div>
+     <div>
+         <label>adresse Professeur</label>
+         <input asp-for="adresseProfesseur" type="text">
+    </div>
+     <div>
+         <label>phoneProfesseur</label>
+         <input asp-for="phoneProfesseur" type="text">
+    </div>
+     <div>
+         <label>Id</label>
+         <input asp-for="Id" type="text">
+    </div>
+    <div>
+         <button type="submit">Edit</button>
+         <button asp-action="Index">Back</button>
+    </div>
+
+</form>

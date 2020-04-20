@@ -1,0 +1,54 @@
+@model IEnumerable<coreProject.Models.Professeur>
+       <!DOCTYPE html>
+       <html lang="en">
+       <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link href="~/dist/css/index.css" type="stylesheet">
+              <title>Document</title>
+       </head>
+       <body>
+              <br><br>
+               <a asp-action="Create" class="btn btn-primary">Create</a>
+ <div class="panel panel-default">
+        <br>
+   <div class="panel-heading">
+      Liste des Professeurs
+   </div>
+   <br>
+   <div class="panel-body">
+    <table  class="table table-bordred">
+            <thead>
+           <tr>
+                     <td>code Professeur</td>
+                     <td>nom Professeur</td>
+                     <td>prenom Professeur</td>
+                     <td>adresse Professeur</td>
+                     <td>phone Professeur</td>
+                     <td style="width: 300px;">Methods</td>
+           </tr>
+           </thead>
+         <tbody>
+           @foreach (var item in Model)
+           {
+               <tr>
+                     <td>@Html.DisplayFor(ModelItem => item.codeProf)</td>
+                     <td>@Html.DisplayFor(ModelItem => item.nomProfesseur)</td>
+                     <td>@Html.DisplayFor(ModelItem => item.prenomProfesseur)</td>
+                     <td>@Html.DisplayFor(ModelItem => item.adresseProfesseur)</td>
+                     <td>@Html.DisplayFor(ModelItem => item.phoneProfesseur)</td>
+                     <td style="width: 300px;">
+                            <button class="btn btn-primary">@Html.ActionLink("Details","Details",new {item.codeProf})</button>
+                            <button class="btn btn-success">@Html.ActionLink("Edit","Edit",new {item.codeProf})</button>
+                            <button class="btn btn-danger">@Html.ActionLink("Delete","Delete",new {item.codeProf})</button>
+                     </td>
+           </tr>
+           }
+            </tbody>
+    </table>
+     </div>
+   
+    </div>
+       </body>
+       </html>
+ 

@@ -1,0 +1,24 @@
+@model coreProject.Models.Seance
+<form>
+    <div>
+         <label>code Seance</label>
+         <label>@Html.DisplayFor(model => model.codeSeance)</label>
+    </div>
+     <div>
+         <label>code Matiere</label>
+         <label>@Html.DisplayFor(model => model.codeMatiere)</label>
+    </div>
+     <div>
+         <label>code Prof</label>
+        <label>@Html.DisplayFor(model => model.codeProf)</label>
+    </div>
+     <div>
+         <label>code Filierr</label>
+         <label>@Html.DisplayFor(model => model.codeFiliere)</label>
+    </div>
+    
+    <div>
+        <button asp-action="Index">Back</button>
+    </div>
+
+</form>

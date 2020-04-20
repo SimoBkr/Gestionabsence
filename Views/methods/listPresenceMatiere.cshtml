@@ -1,0 +1,44 @@
+@model IEnumerable<coreProject.Models.listPresenceMatiere>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/dist/css/index.css" type="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <br><br>
+      <div class="panel panel-default">
+        <br>
+   <div class="panel-heading">
+      Liste de presences par Matiere
+   </div>
+   <br>
+   <div class="panel-body">
+<table class="table table-bordred">
+   <thead>
+  <tr>
+         <td style="background: red;">code Matiere</td>
+         <td>nom Etudiant</td>
+         <td>prenom Etudiant</td>
+  </tr>
+   </thead>
+         <tbody>
+  @foreach (var item in Model)
+  {
+      <tr>
+          <td>@Html.DisplayFor(ModelItem => item.codeMatiere)</td>
+          <td>@Html.DisplayFor(ModelItem => item.nomEtudiant)</td>
+          <td>@Html.DisplayFor(ModelItem => item.prenomEtudiant)</td>
+  </tr>
+  }
+   </tbody>
+</table>
+
+  </div>
+   
+    </div>
+  </body>
+  </html>
+ 

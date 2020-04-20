@@ -1,0 +1,30 @@
+@model coreProject.Models.Etudiant
+<form>
+    <div>
+         <label>codeCart</label>
+         <label>@Html.DisplayFor(model => model.codeCart)</label>
+    </div>
+    <div>
+         <label>nomEtudiant</label>
+         <label>@Html.DisplayFor(model => model.nomEtudiant)</label>
+    </div>
+    <div>
+         <label>prenomEtudiant</label>
+         <label>@Html.DisplayFor(model => model.prenomEtudiant)</label>
+    </div>
+    <div>
+         <label>adresseEtudiant</label>
+        <label>@Html.DisplayFor(model => model.adresseEtudiant)</label>
+    </div>
+    <div>
+         <label>phoneEtudiant</label>
+         <label>@Html.DisplayFor(model => model.phoneEtudiant)</label>
+    </div>
+    <div>
+         <label>codeFiliere</label>
+         <label>@Html.DisplayFor(model => model.codeFiliere)</label>
+    </div>
+    <div>
+         <button type="submit" asp-action="Index">Back</button>
+    </div>
+</form>

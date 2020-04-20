@@ -1,0 +1,30 @@
+@model coreProject.Models.Etudiant
+<form asp-action="Create">
+    <div>
+         <label>codeCart</label>
+         <input type="text" asp-for="codeCart">
+    </div>
+    <div>
+         <label>nomEtudiant</label>
+         <input type="text" asp-for="nomEtudiant">
+    </div>
+    <div>
+         <label>prenomEtudiant</label>
+         <input type="text" asp-for="prenomEtudiant">
+    </div>
+    <div>
+         <label>adresseEtudiant</label>
+         <input type="text" asp-for="adresseEtudiant">
+    </div>
+    <div>
+         <label>phoneEtudiant</label>
+         <input type="text" asp-for="phoneEtudiant">
+    </div>
+    <div>
+         <label>codeFiliere</label>
+         <input type="text" asp-for="codeFiliere">
+    </div>
+    <div>
+         <button type="submit">Create</button>
+    </div>
+</form>

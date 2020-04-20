@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap");
+body {
+  font-family: "Ribeye";
+  background-image: url("ecole.jpg");}
+  
+.table-box {
+  width: 800px;
+  height: 400px;
+  overflow-y: scroll;
+  background: rgb(80, 26, 124);
+  box-shadow: 0 10px 100px rgba(36, 92, 129, 0.5); }
+
+table {
+  width: 100%; }
+
+table, th, td {
+  border: 1px solid rgb(56, 25, 196);
+  border-collapse: collapse;
+  text-align: left; }
+
+table tr th{
+  width: 60px;
+  text-align: center;
+  background: firebrick }
+
+
+  table tr td  {
+    color:burlywood;
+    text-align: center; }
+
+table tr td .simo {
+  color: brown;
+  text-align: center; }
+
+  h1 {
+    color: gold;
+  }
+
+ div .panel-heading {
+  color: aqua;
+ }
+
+ p{
+   color: aqua;
+ }

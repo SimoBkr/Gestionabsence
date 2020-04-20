@@ -1,0 +1,53 @@
+@model IEnumerable<coreProject.Models.Matiere>
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="~/dist/css/index.css" type="stylesheet">
+            <title>Document</title>
+     </head>
+     <body>
+            <br><br>
+            <a asp-action="Create" class="btn btn-primary">Create</a>
+ <div class="panel panel-default">
+        <br>
+   <div class="panel-heading">
+      Matieres
+   </div>
+   <br>
+   <div class="panel-body">
+    <table class="table table-bordred">
+           <thead>
+           <tr>
+                     <td style="background: red;">code Matiere</td>
+                     <td>nom Matiere</td>
+                     <td>code Prof</td>
+                     <td>Methods</td>
+                     
+           </tr>
+            </thead>
+         <tbody>
+           @foreach (var item in Model)
+           {
+               <tr>
+                     <td>@Html.DisplayFor(ModelItem => item.codeMatiere)</td>
+                     <td>@Html.DisplayFor(ModelItem => item.nomMatiere)</td>
+                     <td>@Html.DisplayFor(ModelItem => item.codeProf)</td>
+                     
+                     <td>
+                     <button class="btn btn-primary">@Html.ActionLink("Details","Details",new {item.codeMatiere})</button>
+                     <button class="btn btn-success">@Html.ActionLink("Edit","Edit",new {item.codeMatiere})</button>
+                     <button class="btn btn-danger">@Html.ActionLink("Delete","Delete",new {item.codeMatiere})</button>
+                     </td>
+           </tr>
+           }
+             </tbody>
+    </table>
+    </div>
+   
+    </div>
+     </body>
+     </html>
+
+ 

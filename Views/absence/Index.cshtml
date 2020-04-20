@@ -1,0 +1,58 @@
+@model IEnumerable<coreProject.Models.Absence>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="~/dist/css/index.css" type="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+      <br><br>
+   <a asp-action="Create" class="btn btn-primary">Create</a>
+   <div class="panel panel-default">
+    <br>
+   <div class="panel-heading">
+      Liste d'Absences
+   </div>
+   <br>
+   <div class="panel-body">
+        <table class="table table-bordred" >
+         <thead>
+         <tr>
+             <th style="background: red;">code Absence</th>
+             <th>code Matiere</th>
+             <th>code Cart</th>
+             <th>date Absence</th>
+             <th>Methods</th>
+              
+         </tr>
+         </thead>
+         <tbody>
+         @foreach (var item in Model)
+         {
+             <tr>
+                    <td>@Html.DisplayFor(ModelItem => item.codeAbsence)</td>
+                    <td>@Html.DisplayFor(ModelItem =>item.codeMatiere)</td>
+                    <td>@Html.DisplayFor(ModelItem => item.codeCart)</td>
+                    <td>@Html.DisplayFor(ModelItem => item.dateAbsence)</td>
+                    <td>
+                       <button class="btn btn-primary">@Html.ActionLink("Details" ,"Details" , new {item.codeAbsence})</button>
+                       <button class="btn btn-success">@Html.ActionLink("Edit" ,"Edit" , new {item.codeAbsence})</button>
+                       <button class="btn btn-danger">@Html.ActionLink("Delete" ,"Delete" , new {item.codeAbsence})</button>
+                    </td>
+             </tr>
+             
+         }
+         </tbody>
+
+
+
+    </table>
+    </div>
+   
+    </div>
+
+    </body>
+    </html>
+    
